@@ -84,32 +84,15 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
+// Base16 - Ocean theme
 static const char *colorname[] = {
-	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
-	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
+    "#2b303b", "#bf616a", "#a3be8c", "#ebcb8b", "#8fa1b3", "#b48ead", "#96b5b4",
+    "#c0c5ce", "#65737e", "#bf616a", "#a3be8c", "#ebcb8b", "#8fa1b3", "#b48ead",
+    "#96b5b4", "#c0c5ce", [255] = 0,
+    /* more colors can be added after 255 to use with DefaultXX */
+    "#2b303b", /* 256 -> bg */
+    "#c0c5ce", /* 257 -> fg */
+    "#c0c5ce", /* 258 -> cursor */
 };
 
 float alpha = 0.92;
