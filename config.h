@@ -112,13 +112,15 @@ static const char *colorname[] = {
 	"#555555",
 };
 
+float alpha = 0.92;
+
 /*
  * Xresources preferences to load at startup
  */
 ResourcePref resources[] = {
     {"font",         STRING,  &font},
     {"fontalt0",     STRING,  &font2[0]},
-    /* {"alpha",        FLOAT,   &alpha}, */
+    {"alpha",        FLOAT,   &alpha},
     {"borderpx",     INTEGER, &borderpx},
     {"cursorColor",  STRING,  &colorname[258]},
     {"termname",     STRING,  &termname},
