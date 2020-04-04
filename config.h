@@ -6,6 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = { "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -109,6 +110,26 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#cccccc",
 	"#555555",
+};
+
+/*
+ * Xresources preferences to load at startup
+ */
+ResourcePref resources[] = {
+    {"font",         STRING,  &font},
+    {"fontalt0",     STRING,  &font2[0]},
+    /* {"alpha",        FLOAT,   &alpha}, */
+    {"borderpx",     INTEGER, &borderpx},
+    {"cursorColor",  STRING,  &colorname[258]},
+    {"termname",     STRING,  &termname},
+    {"shell",        STRING,  &shell},
+    {"xfps",         INTEGER, &xfps},
+    {"actionfps",    INTEGER, &actionfps},
+    {"blinktimeout", INTEGER, &blinktimeout},
+    {"bellvolume",   INTEGER, &bellvolume},
+    {"tabspaces",    INTEGER, &tabspaces},
+    {"cwscale",      FLOAT,   &cwscale},
+    {"chscale",      FLOAT,   &chscale},
 };
 
 
