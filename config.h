@@ -99,9 +99,9 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 // Base16 - Ocean theme
 static const char *colorname[] = {
-    "#2b303b", "#bf616a", "#a3be8c", "#ebcb8b", "#8fa1b3", "#b48ead", "#96b5b4",
-    "#c0c5ce", "#65737e", "#bf616a", "#a3be8c", "#ebcb8b", "#8fa1b3", "#b48ead",
-    "#96b5b4", "#c0c5ce", [255] = 0,
+    "#282828", "#cc241d", "#98971a", "#d79921", "#458588", "#b16286", "#689d6a",
+    "#a89984", "#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598", "#d3869b",
+    "#8ec07c", "#ebdbb2", [255] = 0,
     /* more colors can be added after 255 to use with DefaultXX */
     "#2b303b", /* 256 -> bg */
     "#c0c5ce", /* 257 -> fg */
