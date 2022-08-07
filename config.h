@@ -102,15 +102,23 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* Terminal colors (16 first used in escape sequence) */
-// Base16 - Ocean theme
 static const char *colorname[] = {
-    "#282828", "#cc241d", "#98971a", "#d79921", "#458588", "#b16286", "#689d6a",
-    "#a89984", "#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598", "#d3869b",
-    "#8ec07c", "#ebdbb2", [255] = 0,
-    /* more colors can be added after 255 to use with DefaultXX */
-    "#2b303b", /* 256 -> bg */
-    "#c0c5ce", /* 257 -> fg */
-    "#c0c5ce", /* 258 -> cursor */
+    // Gruvbox
+    // "#282828", "#cc241d", "#98971a", "#d79921", "#458588", "#b16286",
+    // "#689d6a",
+    // "#a89984", "#928374", "#fb4934", "#b8bb26", "#fabd2f", "#83a598",
+    // "#d3869b",
+    // "#8ec07c", "#ebdbb2", [255] = 0,
+    // "#2b303b", /* 256 -> bg */
+    // "#c0c5ce", /* 257 -> fg */
+    // "#c0c5ce", /* 258 -> cursor */
+
+    // TokyoNight storm
+    "#1D202F", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff",
+    "#a9b1d6", "#414868", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7",
+    "#24283b", // bg
+    "#c0caf5", // fg
+    "#c0caf5", // cursor
 };
 
 float alpha = 0.92;
